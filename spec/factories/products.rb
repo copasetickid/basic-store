@@ -5,6 +5,6 @@ FactoryGirl.define do
     desc Faker::Lorem.sentence
     model Faker::Commerce.color
     price Faker::Number.decimal(2)
-    sku   SecureRandom.hex(10)
+    sequence(:sku)  { |n| "#{SecureRandom.hex(10)}""#{n}" }
   end
 end
