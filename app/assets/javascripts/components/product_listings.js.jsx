@@ -3,7 +3,7 @@ class ProductListings extends React.Component {
     return (
       <div className="row section">
         {this.props.products.map(product =>
-          <ProductCard product={product}/>
+          <ProductCard key={product.id} product={product}/>
         )}
       </div>
     );
