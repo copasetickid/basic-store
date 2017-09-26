@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'  # Use Uglifier as compressor for JavaScript assets
 gem 'devise'                # User Authentication
 gem 'jquery-rails'
 gem 'materialize-sass'      # Material Design Sass version of Materialize
+gem "react-rails"
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
