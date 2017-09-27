@@ -18,9 +18,9 @@ gem 'uglifier', '>= 1.3.0'  # Use Uglifier as compressor for JavaScript assets
 gem 'devise'                # User Authentication
 gem 'jquery-rails'
 gem 'materialize-sass'      # Material Design Sass version of Materialize
+gem "react-rails"
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jsonapi-resources'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -33,8 +33,13 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6'
+  gem 'rails-controller-testing'
   gem 'factory_girl_rails'
   gem 'faker'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do
